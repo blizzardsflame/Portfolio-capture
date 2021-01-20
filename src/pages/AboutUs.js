@@ -1,10 +1,12 @@
 import About from "../components/About";
+import Services from "../components/Services";
 
 const AboutUs = () => {
   return (
-    <div>
+    <>
       <About />
-    </div>
+      <Services />
+    </>
   );
 };
 
