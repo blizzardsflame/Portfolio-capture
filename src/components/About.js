@@ -1,31 +1,39 @@
 import home1 from "../img/home1.png";
+import Wave from "../components/Wave";
 //Style
 import { Aboutblock, Description, Image, Hide } from "../Styles";
+import { motion } from "framer-motion";
+import { titleAnimation, fade, photoAnimation } from "../animation";
 
 const About = () => {
   return (
     <Aboutblock>
+      <Wave />
       <Description>
-        <div className="title">
+        <motion.div>
           <Hide>
-            <h2>We work to make</h2>
+            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2 variants={titleAnimation}>
               your <span>dream</span> come
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>true</h2>
+            <motion.h2 variants={titleAnimation}>true</motion.h2>
           </Hide>
-        </div>
-        <p>
+        </motion.div>
+        <motion.p variants={fade}>
           Contact us for any photography or videography ideas that you have.
-        </p>
-        <button>Contact Us</button>
+        </motion.p>
+        <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
       <Image>
-        <img src={home1} alt="guy with a camera" />
+        <motion.img
+          variants={photoAnimation}
+          src={home1}
+          alt="guy with a camera"
+        />
       </Image>
     </Aboutblock>
   );
