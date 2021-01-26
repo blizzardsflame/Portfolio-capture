@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+//Components
+import ScrollTop from "../components/ScrollTop";
 //Style && Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -48,6 +50,7 @@ const ProjectDetail = () => {
           </ImageDisplay>
         </Details>
       )}
+      <ScrollTop />
     </>
   );
 };

@@ -1,6 +1,8 @@
 import About from "../components/About";
 import Services from "../components/Services";
 import Faq from "../components/Faq";
+import ScrollTop from "../components/ScrollTop";
+
 //Animation
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
@@ -16,6 +18,7 @@ const AboutUs = () => {
       <About />
       <Services />
       <Faq />
+      <ScrollTop />
     </motion.div>
   );
 };

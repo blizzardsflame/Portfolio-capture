@@ -1,5 +1,7 @@
 //Route
 import { Link } from "react-router-dom";
+//Components
+import ScrollTop from "../components/ScrollTop";
 //Style
 import styled from "styled-components";
 //Animation
@@ -11,7 +13,6 @@ import {
   photoAnimation,
   sliderAnimation,
   sliderContainerAnimation,
-  scrollAnim,
 } from "../animation";
 //Images
 import athlete from "../img/athlete-small.png";
@@ -67,6 +68,7 @@ const Work = () => {
           />
         </Link>
       </Movie>
+      <ScrollTop />
     </Workblock>
   );
 };
