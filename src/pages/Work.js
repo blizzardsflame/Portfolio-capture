@@ -11,6 +11,7 @@ import {
   photoAnimation,
   sliderAnimation,
   sliderContainerAnimation,
+  scrollAnim,
 } from "../animation";
 //Images
 import athlete from "../img/athlete-small.png";
@@ -46,16 +47,24 @@ const Work = () => {
       </Movie>
       <Movie>
         <motion.h2 variants={fade}>The Racer</motion.h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/the-racer">
-          <img src={theracer} alt="The racer" />
+          <motion.img
+            variants={photoAnimation}
+            src={theracer}
+            alt="The racer"
+          />
         </Link>
       </Movie>
       <Movie>
         <motion.h2 variants={fade}>Good Times</motion.h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/good-times">
-          <img src={goodtimes} alt="good times" />
+          <motion.img
+            variants={photoAnimation}
+            src={goodtimes}
+            alt="good times"
+          />
         </Link>
       </Movie>
     </Workblock>
@@ -68,7 +77,7 @@ const Workblock = styled(motion.div)`
   padding: 5rem 10rem;
   background: #fff;
 `;
-const Movie = styled.div`
+const Movie = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
@@ -82,7 +91,7 @@ const Movie = styled.div`
   }
 `;
 
-const Hide = styled.div`
+const Hide = styled(motion.div)`
   overflow: hidden;
 `;
 
