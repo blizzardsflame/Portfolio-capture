@@ -25,7 +25,7 @@ export const ProjectState = () => {
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Lorem Ipsum is simply dummy text.",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
@@ -48,7 +48,7 @@ export const ProjectState = () => {
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Lorem Ipsum is simply dummy text.",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
@@ -71,7 +71,7 @@ export const ProjectState = () => {
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Lorem Ipsum is simply dummy text.",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },

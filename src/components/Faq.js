@@ -45,7 +45,7 @@ const Faq = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="What Products do you offer">
+        <Toggle title="What Products do we offer">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet consectetur.</p>
             <p>

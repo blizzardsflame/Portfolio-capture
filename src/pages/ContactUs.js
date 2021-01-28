@@ -16,56 +16,109 @@ const ContactUs = () => {
     >
       <Title>
         <Hide>
-          <motion.h2 variants={titleAnimation}>Get in touch.</motion.h2>
+          <motion.h2 variants={titleAnimation}>
+            Get <span>In Touch</span>
+          </motion.h2>
         </Hide>
       </Title>
-      <div>
-        <Hide>
-          <Social variants={titleAnimation}>
-            <Circle />
-            <h2>Send Us A Message</h2>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnimation}>
-            <Circle />
-            <h2>Send An Email</h2>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnimation}>
-            <Circle />
-            <h2>Social Media</h2>
-          </Social>
-        </Hide>
-      </div>
+      <contactForm>
+        <form
+          style={{
+            width: "400px",
+            border: "0.5px solid #23d997",
+            boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+            marginTop: "5px",
+          }}
+        >
+          <Hide>
+            <Social variants={titleAnimation}>
+              <input type="text" className="form-control" placeholder="Name" />
+            </Social>
+          </Hide>
+          <Hide>
+            <Social variants={titleAnimation}>
+              <input
+                type="email"
+                className="form-control"
+                aria-describedby="emailHelp"
+                placeholder="Email"
+              />
+            </Social>
+          </Hide>
+          <Hide>
+            <Social variants={titleAnimation}>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Subject"
+              />
+            </Social>
+          </Hide>
+          <Hide>
+            <Social variants={titleAnimation}>
+              <textarea
+                className="form-control"
+                placeholder="Message"
+                rows="6"
+              ></textarea>
+            </Social>
+          </Hide>
+          <Hide>
+            <Social variants={titleAnimation}>
+              <button className="form-control">Send</button>
+            </Social>
+          </Hide>
+        </form>
+      </contactForm>
       <ScrollTop />
     </ContactStyle>
   );
 };
 
 const ContactStyle = styled(motion.div)`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 5rem 10rem;
   color: #353535;
   min-height: 90vh;
+  @media (max-width: 1300px) {
+    padding: 2rem;
+    font-size: 1rem;
+  }
 `;
 
 const Title = styled(motion.div)`
-  margin-bottom: 4rem;
-  color: black;
-`;
-
-const Circle = styled(motion.div)`
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: #353535;
-`;
-const Social = styled(motion.div)`
   display: flex;
   align-items: center;
+  color: black;
   h2 {
-    margin: 2rem;
+    font-weight: bold;
+    font-size: 6rem;
+  }
+`;
+
+const contactForm = styled(motion.div)`
+  align-items: center;
+`;
+
+const Social = styled(motion.div)`
+  margin: 3px;
+  padding: 5px;
+  input,
+  textArea {
+    width: 100%;
+    display: block;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    padding: 8px;
+    border-radius: 3px;
+  }
+  button {
+    width: 100%;
+    display: block;
+    color: black;
+    background-color: #23d997;
   }
 `;
 

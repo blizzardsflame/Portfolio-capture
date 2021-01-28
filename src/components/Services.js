@@ -19,7 +19,7 @@ const Services = () => {
     >
       <Description>
         <h2>
-          High <span>quality</span> services
+          High <span>Quality</span> Services
         </h2>
         <Cards>
           <Card>
@@ -66,6 +66,9 @@ const Servicesblock = styled(Aboutblock)`
   p {
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
+  }
+  @media (max-width: 1100px) {
+    justify-content: center;
   }
 `;
 const Cards = styled.div`

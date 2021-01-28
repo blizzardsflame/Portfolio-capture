@@ -78,6 +78,9 @@ const Workblock = styled(motion.div)`
   overflow: hidden;
   padding: 5rem 10rem;
   background: #fff;
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
+  }
 `;
 const Movie = styled(motion.div)`
   padding-bottom: 10rem;
